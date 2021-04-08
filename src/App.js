@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import PieceOfArt from './PieceOfArt';
 import DropDown from './DropDown';
@@ -8,7 +8,7 @@ import DropDown from './DropDown';
 function App() {
 
   const [art, setArt] = useState([]);
-  const [search, setSearch] = useState('');
+  // const [search, setSearch] = useState('');
 
   const getArt = function(e, choice){
     e.preventDefault();
